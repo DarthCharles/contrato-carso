@@ -1,9 +1,9 @@
 <div class="jumbotron">
   <div class="row">
-    <div class="col-md-6 col-derecha">
+    <div class="col-md-6 col-izquierda">
 
-      <div class="block">
-        <label for="name">Name:</label>
+      <div class="block izquierdo">
+        <label for="name">Name</label>
         <span><input name="name" /></span>
         <label for="name">Total Cost $</label>
         <span><input name="total-cost" /></span>
@@ -11,25 +11,39 @@
         <span><input name="time-estimate" /></span>
       </div>
 
-      <div class="block">
+      <div class="block izquierdo">
         <label for="name">Payment Amount $</label>
         <span><input id="name" name="name" /></span>       
         <table class='payment'>
           <tr>
             <td>
-              <input type="radio" name="checkboxG4" id="checkboxG4" class="css-checkbox" checked="checked" />
+              <input type="radio" name="payment-type" id="checkboxG4" class="css-checkbox" checked="checked" />
               <label for="checkboxG4" class="css-label">Paid in Full<span class='subtext'>With Discount</span></label>
             </td>
             <td>
-              <input type="radio" name="checkboxG4" id="checkboxG5" class="css-checkbox" />
+              <input type="radio" name="payment-type" id="checkboxG5" class="css-checkbox" />
               <label for="checkboxG5" class="css-label">Down Payment</label>
             </td>
           </tr>
         </table>
       </div>
 
-      <div class="block">
-
+      <div class="block izquierdo">
+       <label for="name">Form of Payment</label>
+       <span> <input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
+        <label for="checkboxG1" class="css-label-check">Auto Bill</label></span>
+        <table class='payment'>
+          <tr>
+            <td>
+              <input type="checkbox" name="checkboxG2" id="checkboxG2" class="css-checkbox"  />
+              <label for="checkboxG2" class="css-label-check">Credit Card</label>
+            </td>
+            <td>
+              <input type="checkbox" name="checkboxG3" id="checkboxG3" class="css-checkbox" />
+              <label for="checkboxG3" class="css-label-check">Bank Deposit</label>
+            </td>
+          </tr>
+        </table></br>
         <label for="name">Routing #</label>
         <span><div class='spaced-input'>
           <input type="text" maxlength="1" />
@@ -52,11 +66,41 @@
           <input type="text" maxlength="1" />
           <input type="text" maxlength="1" />
           <input type="text" maxlength="1" />
-        </div></span>
+        </div></span></br>
+
+   
+        <div class="signature">
+        </div>
+        <table class='payment' style='width: 100%;'>
+          <tr>
+            <td>
+              <label id='floated'>Card Holder's Name</label>
+            </td>
+            <td>
+              <label id='floated' style='text-align: right;'>Code</label>
+            </td>
+          </tr>
+        </table>
+
+
+        <div class="signature">
+        </div>
+               <table class='payment' style='width: 100%;'>
+          <tr>
+            <td>
+              <label id='floated'>Card Number</label>
+            </td>
+            <td>
+              <label id='floated' style='text-align: right;'>Exp.</label>
+            </td>
+          </tr>
+        </table>
+
+
       </div>
 
-      <div class="block">
-        <label for="business-name">Business Name:</label>
+      <div class="izquierdo">
+        <label for="business-name">Business Name</label>
         <span><input name="business-name" /></span>
         <label for="adress">Adress</label>
         <span><input name="adress" /></span>
@@ -82,8 +126,40 @@
      </div>
    </div>
 
-   <div class="col-md-6">
-    <label>Notes:</label>
+   <div class="col-md-6 col-derecha">
+    <div class="block derecho">
+      <div class="notes">
+       <label for="email">Notes</label></div>
+     </div>
+     <div class="derecho">
+      <label id='floated'for="email">Website</label>
+      <table class='payment'>
+        <tr>
+          <td>
+            <input type="radio" name="website" id="checkboxG6" class="css-checkbox"  />
+            <label for="checkboxG6" class="css-label">New</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" name="website" id="checkboxG7" class="css-checkbox" />
+            <label for="checkboxG7" class="css-label">Existing</label>
+          </td>
+        </tr>
+      </table>
+      <label for="url">URL</label>
+      <span><input name="url" /></span>
+      <label for="ftp">FTP</label>
+      <span><input name="ftp" /></span>
+      <label for="user">Username</label>
+      <span><input name="user" /></span>
+      <label for="user">Password</label>
+      <span><input name="password" /></span>
+      <label id='floated'>Signature of Advertiser</label>
+<div class="signature">
+</div>
+
+    </div>
   </div>
 </div>
 </div>
