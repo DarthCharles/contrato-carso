@@ -5,29 +5,85 @@
       <div class="block">
         <label for="name">Name:</label>
         <span><input name="name" /></span>
-
         <label for="name">Total Cost $</label>
         <span><input name="total-cost" /></span>
-
         <label for="name">Time Estimate:</label>
         <span><input name="time-estimate" /></span>
       </div>
 
       <div class="block">
         <label for="name">Payment Amount $</label>
-        <span><input id="name" name="name" /></span>
-
-        <input type='checkbox' name="name" />
-        <label id='floated' for="name">Paid in Full</label>
-        
-        <input type='checkbox' name="name" />
-        <label id='floated' for="name">Down Payment</label>
-
+        <span><input id="name" name="name" /></span>       
+        <table class='payment'>
+          <tr>
+            <td>
+              <input type="radio" name="checkboxG4" id="checkboxG4" class="css-checkbox" checked="checked" />
+              <label for="checkboxG4" class="css-label">Paid in Full<span class='subtext'>With Discount</span></label>
+            </td>
+            <td>
+              <input type="radio" name="checkboxG4" id="checkboxG5" class="css-checkbox" />
+              <label for="checkboxG5" class="css-label">Down Payment</label>
+            </td>
+          </tr>
+        </table>
       </div>
-    </div>
 
-    <div class="col-md-6">
-      <label>Notes:</label>
-    </div>
+      <div class="block">
+
+        <label for="name">Routing #</label>
+        <span><div class='spaced-input'>
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+        </div></span> <br>
+
+        <label for="name">Account #</label>
+        <span><div class='spaced-input'>
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+        </div></span>
+      </div>
+
+      <div class="block">
+        <label for="business-name">Business Name:</label>
+        <span><input name="business-name" /></span>
+        <label for="adress">Adress</label>
+        <span><input name="adress" /></span>
+        <label for="phone">Phone</label>
+        <span><input name="phone" /></span>
+        <label for="email">Email</label>
+        <span><input name="email" /></span>
+        <label for="email">Print Name</label>
+        <span><input name="email" /></span>
+
+        <table class='payment'>
+          <tr>
+            <td>
+             <label for="email">Title</label>
+             <span><input name="email" /></span>
+           </td>
+           <td>
+             <label for="email">Date</label>
+             <span><input name="email" /></span>
+           </td>
+         </tr>
+       </table>
+     </div>
+   </div>
+
+   <div class="col-md-6">
+    <label>Notes:</label>
   </div>
+</div>
 </div>

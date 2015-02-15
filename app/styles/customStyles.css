@@ -1,27 +1,45 @@
 .header {
-background-color: #e67e22;
+	background-color: #e67e22;
+-webkit-border-top-left-radius: 6px;
+-webkit-border-top-right-radius: 6px;
+-moz-border-radius-topleft: 6px;
+-moz-border-radius-topright: 6px;
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+}
+
+.jumbotron {
+-webkit-border-radius: 6px;
+-webkit-border-top-left-radius: 0px;
+-webkit-border-top-right-radius: 0px;
+-moz-border-radius: 6px;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 0px;
+border-radius: 6px;
+border-top-left-radius: 0px !important;
+border-top-right-radius: 0px !important;
 }
 
 .jumbotron label {
-    float: left;
+	float: left;
 }
 
 .jumbotron span {
-    overflow: hidden;
-    display: block;
-    padding: 0 4px 0 10px
+	overflow: hidden;
+	display: block;
+	padding: 0 4px 0 10px
 }
 .jumbotron span > input {
-    width: 100%;
-    margin-bottom: 15px;
-        border:0;
-    border-bottom: solid 1px #222222;
-    background-color: transparent;
-outline: none;
+	width: 100%;
+	margin-bottom: 15px;
+	border:0;
+	border-bottom: solid 1px #222222;
+	background-color: transparent;
+	outline: none;
 }
 
 .block {
-	padding: 15px 15px 15px 25px;
+	padding: 15px 15px 15px 20px;
 	border-bottom: 2px solid #222222;
 }
 .col-derecha {
@@ -31,4 +49,61 @@ outline: none;
 
 #floated {
 	float: none;
+}
+
+.subtext{
+	font-size: 8px;
+}
+
+.payment td{
+	padding: 5px;
+}
+
+input[type=radio].css-checkbox {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+
+}
+
+input[type=radio].css-checkbox + label.css-label {
+	padding-left:25px;
+	height:19px; 
+	display:inline-block;
+	line-height:19px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+
+
+}
+
+input[type=radio].css-checkbox:checked + label.css-label {
+	background-position: 0 -19px;
+}
+label.css-label {
+	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_89e9c238ad4d60c888b47e4bbef7ece9.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.spaced-input {
+    border:0;
+    border-bottom: solid 2px #222222;
+    border-left: solid 2px #222222;
+    display: inline-block;
+}
+
+.spaced-input input {
+    width: 15px;
+    padding: 0px;
+    border:0;
+    border-right: solid 2px #222222;
+    outline: none;
+    font-family: Consolas, monospace;
+    text-align: center;
+    background-color: transparent;
 }
