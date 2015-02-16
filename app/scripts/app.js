@@ -17,6 +17,22 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+  .directive('spacedInput', function() {
+    return {
+        // Restrict it to be an attribute in this case
+        restrict: 'A',
+        // responsible for registering DOM listeners as well as updating the DOM
+        link: function(scope, element) {
+            element.children(':input').keyup(function(){
+              var maxlength = $(this).prop('maxlength');
+              var length = this.value.length;
+              if (maxlength === length) {
+                  $(this).next().focus();
+              }
+            });
+        }
+    };
+})
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

@@ -3,8 +3,8 @@
     <div class="col-md-6 col-izquierda">
 
       <div class="block izquierdo">
-        <label for="name">Name</label>
-        <span><input name="name" /></span>
+        <label for="start-date">Start Date</label>
+        <span><input name="start-date" /></span>
         <label for="name">Total Cost $</label>
         <span><input name="total-cost" /></span>
         <label for="name">Time Estimate:</label>
@@ -13,7 +13,7 @@
 
       <div class="block izquierdo">
         <label for="name">Payment Amount $</label>
-        <span><input id="name" name="name" /></span>       
+        <span><input id="name" name="name" /></span>      
         <table class='payment'>
           <tr>
             <td>
@@ -32,7 +32,7 @@
        <label for="name">Form of Payment</label>
        <span> <input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" />
         <label for="checkboxG1" class="css-label-check">Auto Bill</label></span>
-        <table class='payment'>
+        <table class='payment'  style="clear:both;">
           <tr>
             <td>
               <input type="checkbox" name="checkboxG2" id="checkboxG2" class="css-checkbox"  />
@@ -45,7 +45,8 @@
           </tr>
         </table></br>
         <label for="name">Routing #</label>
-        <span><div class='spaced-input'>
+        <span><div class='spaced-input' spaced-input>
+          <input type="text" maxlength="1" />
           <input type="text" maxlength="1" />
           <input type="text" maxlength="1" />
           <input type="text" maxlength="1" />
@@ -57,7 +58,8 @@
         </div></span> <br>
 
         <label for="name">Account #</label>
-        <span><div class='spaced-input'>
+        <span><div class='spaced-input' spaced-input>
+          <input type="text" maxlength="1" />
           <input type="text" maxlength="1" />
           <input type="text" maxlength="1" />
           <input type="text" maxlength="1" />
@@ -68,7 +70,7 @@
           <input type="text" maxlength="1" />
         </div></span></br>
 
-   
+
         <div class="signature">
         </div>
         <table class='payment' style='width: 100%;'>
@@ -85,7 +87,7 @@
 
         <div class="signature">
         </div>
-               <table class='payment' style='width: 100%;'>
+        <table class='payment' style='width: 100%;'>
           <tr>
             <td>
               <label id='floated'>Card Number</label>
@@ -129,7 +131,9 @@
    <div class="col-md-6 col-derecha">
     <div class="block derecho">
       <div class="notes">
-       <label for="email">Notes</label></div>
+       <label id='floated' for="notes">Notes</label></br>
+<textarea name="message" id="descripcionGeocerca" cols="24" rows="20" ></textarea>
+     </div>
      </div>
      <div class="derecho">
       <label id='floated'for="email">Website</label>
@@ -155,9 +159,9 @@
       <span><input name="user" /></span>
       <label for="user">Password</label>
       <span><input name="password" /></span>
-      <label id='floated'>Signature of Advertiser</label>
-<div class="signature">
-</div>
+      <label id='floated'>Signature of Advertiser</label></br></br>
+      <div class="signature">
+      </div>
 
     </div>
   </div>
