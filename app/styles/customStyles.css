@@ -19,6 +19,8 @@
 	border-radius: 6px;
 	border-top-left-radius: 0px !important;
 	border-top-right-radius: 0px !important;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
 }
 
 .jumbotron label {
