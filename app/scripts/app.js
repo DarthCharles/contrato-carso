@@ -35,9 +35,9 @@
     })
 .service('Data', function() {
   this.contract = {
-    businessName: '_______________',
-    startDate: '_______________',
-    URL: '_______________'
+    businessName: '',
+    startDate: '',
+    URL: ''
   };
 
   this.setContractData = function(data) {

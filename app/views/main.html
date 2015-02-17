@@ -4,7 +4,7 @@
 
       <div class="block izquierdo">
         <label for="start-date">Start Date</label>
-        <span><input name="start-date" ng-model='contract.startDate'/></span>
+        <span><input name="start-date"  ng-model='contract.startDate'/></span>
         <label for="name" >Total Cost $</label>
         <span><input name="total-cost" ng-model='contract.totalCost' /></span>
         <label for="name">Time Estimate:</label>
@@ -13,7 +13,7 @@
 
       <div class="block izquierdo">
         <label for="name">Payment Amount $</label>
-        <span><input id="name" name="name" /></span>      
+        <span><input name="payment-amount" ng-model='contract.paymentAmount' /></span>      
         <table class='payment'>
           <tr>
             <td>
@@ -100,24 +100,24 @@
       <div class="izquierdo">
         <label for="business-name">Business Name</label>
         <span><input name="business-name" ng-model='contract.businessName' /></span>
-        <label for="adress">Adress</label>
-        <span><input name="adress" /></span>
+        <label for="adress" ng-model=''>Adress</label>
+        <span><input name="adress" ng-model='contract.adress'/></span>
         <label for="phone">Phone</label>
-        <span><input name="phone" /></span>
+        <span><input name="phone" ng-model='contract.phone'/></span>
         <label for="email">Email</label>
-        <span><input name="email" /></span>
+        <span><input name="email" ng-model='contract.email' /></span>
         <label for="email">Print Name</label>
-        <span><input name="email" /></span>
+        <span><input name="print-name" ng-model='contract.printName'/></span>
 
         <table class='payment'>
           <tr>
             <td>
-             <label for="email">Title</label>
-             <span><input name="email" /></span>
+             <label for="title">Title</label>
+             <span><input name="title" ng-model='contract.title'/></span>
            </td>
            <td>
-             <label for="email">Date</label>
-             <span><input name="email" /></span>
+             <label for="date">Date</label>
+             <span><input name="date" ng-model='contract.date'/></span>
            </td>
          </tr>
        </table>
@@ -128,7 +128,7 @@
     <div class="block derecho">
       <div class="notes">
        <label id='floated' for="notes">Notes</label></br>
-<textarea name="message" id="descripcionGeocerca" cols="24" rows="20" ></textarea>
+<textarea name="notes"  cols="24" rows="20" ng-model='contract.notes'></textarea>
      </div>
      </div>
      <div class="derecho">
@@ -150,11 +150,11 @@
       <label for="url">URL</label>
       <span><input name="url" ng-model='contract.URL'  /></span>
       <label for="ftp">FTP</label>
-      <span><input name="ftp" /></span>
+      <span><input name="ftp" ng-model='contract.FTP'/></span>
       <label for="user">Username</label>
-      <span><input name="user" /></span>
+      <span><input name="user" ng-model='contract.user'/></span>
       <label for="user">Password</label>
-      <span><input name="password" /></span>
+      <span><input name="password" ng-model='contract.password' /></span>
       <label id='floated'>Signature of Advertiser</label></br></br>
       <div class="signature">
       </div></br></br>

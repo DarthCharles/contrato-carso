@@ -16,8 +16,10 @@
  		console.log($scope.contract);
 
  		Data.setContractData($scope.contract);
+ 
  	};
 
-
+		
+ 		$scope.contract = Data.getContractData();
 
  });
