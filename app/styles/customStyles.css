@@ -164,7 +164,7 @@ ul.nav.nav-pills.pull-right li {
 }
 
 ul.nav.nav-pills.pull-right a:hover {
-	background-color: transparent;
+	background-color: #f39c12;
 }
 
 ul.nav.nav-pills.pull-right a:focus {
@@ -172,7 +172,8 @@ ul.nav.nav-pills.pull-right a:focus {
 }
 
 ul.nav.nav-pills.pull-right a {
-	color: #222;
+	color: #fff;
+	background-color: #e67e22;
 
 }
 

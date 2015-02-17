@@ -8,10 +8,6 @@
  * Controller of the contratoCarsoApp
  */
 angular.module('contratoCarsoApp')
-  .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('AboutCtrl', function ($scope, Data) {
+  	$scope.contractData = Data.getContractData();
   });

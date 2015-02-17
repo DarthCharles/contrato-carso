@@ -4,11 +4,11 @@
 
       <div class="block izquierdo">
         <label for="start-date">Start Date</label>
-        <span><input name="start-date" /></span>
-        <label for="name">Total Cost $</label>
-        <span><input name="total-cost" /></span>
+        <span><input name="start-date" ng-model='contract.startDate'/></span>
+        <label for="name" >Total Cost $</label>
+        <span><input name="total-cost" ng-model='contract.totalCost' /></span>
         <label for="name">Time Estimate:</label>
-        <span><input name="time-estimate" /></span>
+        <span><input name="time-estimate" ng-model='contract.timeEstimate'/></span>
       </div>
 
       <div class="block izquierdo">
@@ -99,7 +99,7 @@
 
       <div class="izquierdo">
         <label for="business-name">Business Name</label>
-        <span><input name="business-name" /></span>
+        <span><input name="business-name" ng-model='contract.businessName' /></span>
         <label for="adress">Adress</label>
         <span><input name="adress" /></span>
         <label for="phone">Phone</label>
@@ -148,7 +148,7 @@
         </tr>
       </table>
       <label for="url">URL</label>
-      <span><input name="url" /></span>
+      <span><input name="url" ng-model='contract.URL'  /></span>
       <label for="ftp">FTP</label>
       <span><input name="ftp" /></span>
       <label for="user">Username</label>
@@ -157,9 +157,15 @@
       <span><input name="password" /></span>
       <label id='floated'>Signature of Advertiser</label></br></br>
       <div class="signature">
-      </div>
+      </div></br></br>
 
+          <ul class="nav nav-pills pull-right">
+          <li><a ng-click="saveData()" ng-href="#/about">View Contract</a></li> 
+        </ul>
     </div>
+
+
   </div>
+
 </div>
 </div>
